@@ -2,8 +2,10 @@ class CheckCert < Formula
   desc "A command line tool to retrieve the details of a remote SSL certificate"
   homepage "https://github.com/andres-rojas/cli-tools/tree/master/misc"
   url "https://github.com/andres-rojas/cli-tools/raw/master/misc/check-cert"
-  sha256 "960139b8802354656e4a882bf33b7c514e1c27b98e7a6425fa04d387db3e5ebf"
-  version "1.0.0"
+  sha256 "56ae383924e236e89dc60360f73403df2f2aeb9f4f0c2400f92f6ea097d9e5ac"
+  version "1.0.1"
+
+  depends_on "openssl" => :optional
 
   def install
     bin.install "check-cert"
