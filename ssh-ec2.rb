@@ -5,6 +5,9 @@ class SshEc2 < Formula
   sha256 "4fdfd1a170c8d91a77d9cb551ab6913954c29d9a429f50946c3c2d5c9f26017d"
   version "1.0.0"
 
+  depends_on "awscli"
+  depends_on "jq"
+
   def install
     bin.install "ssh-ec2"
   end
