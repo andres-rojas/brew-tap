@@ -5,6 +5,8 @@ class GitCloc < Formula
   sha256 "351238baf510769a994acb8b5614aa782fe2fe92b2cee0bdfc0636645bad9cc5"
   version "1.0.1"
 
+  depends_on "cloc"
+
   def install
     bin.install "git-cloc"
   end
